@@ -7,12 +7,13 @@ interface IProps {
 export const PoolTableItem: React.FC<IProps> = ({ challengeData }) => {
   return (
     <div>
-      {challengeData.map((x) => (
-        <div>
-          Date: {new Date(x.timestamp.toNumber() * 1000).toDateString()}, Link:{' '}
-          {x.link}{' '}
-        </div>
-      ))}
+      {challengeData &&
+        challengeData.map((x, index) => (
+          <div key={`${x.timestamp}_index`}>
+            Date: {new Date(x.timestamp.toNumber() * 1000).toDateString()},
+            Link: {x.link}{' '}
+          </div>
+        ))}
     </div>
   )
 }
