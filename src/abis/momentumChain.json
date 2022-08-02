@@ -104,9 +104,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "recordIndex",
+    "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "name": "records",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      { "internalType": "uint256", "name": "timestamp", "type": "uint256" },
+      { "internalType": "string", "name": "link", "type": "string" }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
