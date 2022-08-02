@@ -24,7 +24,7 @@ export const useChallenge = () => {
         provider
       )
       const recordIndex = await momentumChainContract.recordIndex()
-      const indexArray = Array.from(Array(recordIndex).keys())
+      const indexArray = Array.from(Array(recordIndex.toNumber() + 1).keys())
       const challengeData: IChallenge[] = await Promise.all(
         indexArray.map((x) => momentumChainContract.records(x))
       )
