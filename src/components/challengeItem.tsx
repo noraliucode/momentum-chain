@@ -4,7 +4,7 @@ interface IProps {
   challengeData: IChallenge[]
 }
 
-export const PoolTableItem: React.FC<IProps> = ({ challengeData }) => {
+export const ChallengeItem: React.FC<IProps> = ({ challengeData }) => {
   return (
     <div>
       {challengeData &&
