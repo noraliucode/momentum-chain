@@ -4,7 +4,6 @@ export const ConnectWallet = () => {
   const wallet = useWallet()
   return (
     <>
-      <h1>Wallet</h1>
       {wallet.status === 'connected' ? (
         <div>
           <div>Account: {wallet.account}</div>

@@ -11,6 +11,7 @@ function App() {
   return (
     <UseWalletProvider>
       <div className="App">
+        <h1>Nora's Smart Contract Learning Challenge</h1>
         <ConnectWallet />
         <ChallengeItem challengeData={challengeData} />
       </div>
